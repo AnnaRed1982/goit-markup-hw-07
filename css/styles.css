@@ -119,16 +119,6 @@ body {
   /* outline: 1px solid tomato;
   outline-offset: -1px; */
 }
-
-/*HEADER*/
-.header-page {
-  border-bottom: 1px solid var(--hederline);
-}
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   color: var(--blue);
   font-family: 'Raleway', sans-serif;
@@ -140,6 +130,46 @@ body {
 
   /* background-color: greenyellow; */
 }
+.button {
+  font-family: inherit;
+
+  display: inline-block;
+  min-width: 216px;
+  min-height: 50px;
+  padding: 10px 32px; /*32-2*2 ширина бордера*/
+
+  background-color: var(--blue);
+  color: var(--white);
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  letter-spacing: 0.06em;
+
+  border-radius: var(--btnradius);
+  border: none;
+  box-shadow: 0px 4px 4px var(--shadow);
+
+  transition: background-color var(--anim), box-shadow var(--anim);
+}
+.button:hover,
+.button:focus {
+  font-family: inherit;
+  background-color: var(--blueactive);
+  box-shadow: 0px 4px 4px var(--shadow);
+}
+/*HEADER*/
+.header-page {
+  border-bottom: 1px solid var(--hederline);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo-black {
   color: var(--black);
 }
@@ -226,7 +256,7 @@ nav {
   background-color: var(--darkgrey);
   text-align: center;
 }
-.overlay {
+.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -239,7 +269,7 @@ nav {
   background-position: center;
   background-size: cover;
 }
-.hero-title {
+.hero__title {
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -254,50 +284,20 @@ nav {
   width: 696px;
   min-height: 120px;
 }
-.button {
-  font-family: inherit;
 
-  display: inline-block;
-  min-width: 216px;
-  min-height: 50px;
-  padding: 10px 32px; /*32-2*2 ширина бордера*/
-
-  background-color: var(--blue);
-  color: var(--white);
-
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  letter-spacing: 0.06em;
-
-  border-radius: var(--btnradius);
-  border: none;
-
-  transition: background-color var(--anim), box-shadow var(--anim);
-}
-.button:hover,
-.button:focus {
-  font-family: inherit;
-  background-color: var(--blueactive);
-  box-shadow: 0px 4px 4px var(--shadow);
-}
 /* Advant */
-.adv {
+.advant {
   padding-bottom: 0;
 }
-.adv-comp {
+.advant__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
 }
-.adv-item {
+.advant__item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
 }
-
-.adv-img {
+.advant__img {
   background-color: var(--teamback);
   border-radius: var(--btnradius);
 
@@ -308,8 +308,7 @@ nav {
 
   margin-bottom: 30px;
 }
-
-.adv-title {
+.advant__title {
   color: var(--accentblack);
   font-weight: 700;
 
@@ -319,28 +318,12 @@ nav {
 
   margin-bottom: 10px;
 }
-.adv-text {
+.advant__text {
   width: 270px;
-}
-.adv-icon {
-  display: block;
 }
 
 /* WORK */
-.work-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
-}
-.work_item {
-  position: relative;
-}
-.work-img {
-  flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
-}
-
-.work-title,
-.team-title {
+.work__title {
   color: var(--accentblack);
   font-weight: 700;
   font-size: 36px;
@@ -349,7 +332,18 @@ nav {
 
   margin-bottom: 50px;
 }
-.work-name {
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.work__item {
+  position: relative;
+}
+.work__img {
+  flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
+}
+.work__name {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -370,16 +364,25 @@ nav {
   min-height: 70px;
 }
 /* TEAM */
+
 .team {
   background-color: var(--teamback);
 }
-.team-comp {
+.team__title {
+  color: var(--accentblack);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.team__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
 }
-
-.team-item {
+.team__item {
   background-color: var(--white);
   box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2),
     0px 2px 1px var(--teamshadow3);
@@ -388,11 +391,10 @@ nav {
 
   flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
 }
-
-.team-group {
+.team__group {
   padding: 30px 32px;
 }
-.team-name {
+.team__member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -400,7 +402,7 @@ nav {
   color: var(--accentblack);
   margin-bottom: 10px;
 }
-.team-text {
+.team__position {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
@@ -411,7 +413,7 @@ nav {
   justify-content: center;
   gap: 10px;
 }
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,12 +427,12 @@ nav {
 
   transition: background-color var(--anim), color var(--anim);
 }
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--blue);
   color: var(--white);
 }
-.social-icon {
+.social__icon {
   fill: currentColor;
   display: block;
 }
