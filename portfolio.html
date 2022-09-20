@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css"> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Добавить current in portfoli header -->
+    <header class="header-page list">
+      <div class="container header-container">
+        <nav>
+          <a class="logo link" href="./index.html" lang="en"
+            >Web<span class="logo-black">Studio</span>
+          </a>
+
+          <ul class="nav-site list">
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contact list">
+          <li class="contact-item">
+            <a class="header-link link" href="mailto:info@devstudio.com" lang="en">
+              <svg class="cont-svg" width="16" height="12">
+                <use href="./img/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact-item">
+            <a class="header-link link" href="tel:+380961111111">
+              <svg class="cont-svg" width="10" height="16">
+                <use href="./img/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portf section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо робіт веб-студії</h1>
+          <ul class="filter list">
+            <li class="filter-item">
+              <button class="filter-button" type="button">Усі</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Додатки</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="portf-cont list">
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    class="portf-img"
+                    src="./img/portf/1.jpg"
+                    alt="Веб-сайт"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Технокряк</h2>
+                  <p class="portf-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/2.jpg"
+                    alt="Дизайн"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
+                  <p class="portf-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/3.jpg"
+                    alt="Додаток"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Ресторан<span lang="en">Seafood</span></h2>
+                  <p class="portf-text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/4.jpg"
+                    alt="Маркетинг"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Проєкт<span lang="en">Prime</span></h2>
+                  <p class="portf-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/5.jpg"
+                    alt="Додаток"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Проєкт<span lang="en">Boxes</span></h2>
+                  <p class="portf-text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/6.jpg"
+                    alt="Веб-сайт"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name" lang="en">Inspiration has no Borders</h2>
+                  <p class="portf-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/7.jpg"
+                    alt="Дизайн"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Видання <span lang="en">Limited Edition</span></h2>
+                  <p class="portf-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/8.jpg"
+                    alt="Маркетинг"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="portf-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portf-progect">
+              <a href="" class="portf-link link">
+                <div class="portf-card">
+                  <img
+                    src="./img/portf/9.jpg"
+                    alt="Додаток"
+                    class="portf-img"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portf-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portf-group">
+                  <h2 class="portf-name" lang="en">Growing Business</h2>
+                  <p class="portf-text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-page">
+      <div class="container footer-cont">
+        <div class="footer-left">
+          <a class="logo f link" href="./index.html" lang="en"
+            >Web<span class="logo-white">Studio</span>
+          </a>
+
+          <address>
+            <ul class="adress-comp list">
+              <li class="adress-item">
+                <a
+                  class="adress-city link"
+                  href="https://goo.gl/maps/JjhD47oRXVSocKC27"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="adress-item">
+                <a class="adress-contact link" href="mailto:info@devstudio.com" lang="en">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="adress-item">
+                <a class="adress-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-right">
+          <p class="join">приєднуйтесь</p>
+          <ul class="footer-social list">
+            <li class="footer-item">
+              <a
+                class="footer-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Інстаграм"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./img/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a
+                class="footer-link link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Твіттер"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./img/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a
+                class="footer-link link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Фейсбук"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./img/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a
+                class="footer-link link"
+                href="https://ua.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Лінкедин"
+              >
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./img/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sign">
+          <form class="sign-groupe" name="sign-groupe" autocomplete="on" novalidate>
+            <p class="join">Підпишіться на розсилку</p>
+            <div class="sign-item">
+              <label class="footer-label">
+                <input class="footer-email" type="email" name="user-male" placeholder="E-mail" />
+              </label>
+              <button class="form-btn" type="submit">
+                <span class="sign-name">Підписатися</span>
+                <svg class="sign-icon" width="24" height="24">
+                  <use href="./img/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
