@@ -174,6 +174,35 @@ body {
 
   margin-bottom: 50px;
 }
+/* social-icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--iconcolor);
+  background-color: var(--white);
+  border-radius: 50%;
+
+  transition: background-color var(--anim), color var(--anim);
+}
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.social__icon {
+  fill: currentColor;
+  display: block;
+}
 /*HEADER*/
 .header-page {
   border-bottom: 1px solid var(--hederline);
@@ -402,35 +431,6 @@ nav {
   line-height: 1.19;
   margin-bottom: 16px;
 }
-/* social-icons */
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
-  height: 44px;
-
-  color: var(--iconcolor);
-  background-color: var(--white);
-  border-radius: 50%;
-
-  transition: background-color var(--anim), color var(--anim);
-}
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--blue);
-  color: var(--white);
-}
-.social__icon {
-  fill: currentColor;
-  display: block;
-}
 
 /* Clients */
 .clients__list {
@@ -474,7 +474,6 @@ nav {
 .f {
   margin-bottom: 20px;
   margin-right: 0;
-
   /* background-color: greenyellow; */
   display: block;
 }
@@ -485,7 +484,6 @@ nav {
   text-decoration: none;
   color: var(--white);
   font-style: normal;
-
   /* background-color: greenyellow; */
   display: block;
 
@@ -495,7 +493,6 @@ nav {
   text-decoration: none;
   color: var(--greytext-footer);
   font-style: normal;
-
   /* background-color: greenyellow; */
   display: block;
 
@@ -524,7 +521,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.footer-social {
+/* .footer-social {
   display: flex;
   gap: 10px;
 }
@@ -551,8 +548,11 @@ nav {
 .footer-icon {
   display: block;
   fill: currentColor;
+} */
+.footer-link {
+  background-color: var(--iconfootr);
+  color: var(--white);
 }
-
 /* Footer Email */
 .sign {
   margin-left: auto;
