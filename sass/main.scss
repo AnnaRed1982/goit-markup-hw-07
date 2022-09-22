@@ -1,25 +1,21 @@
 //utils styles
-@import './utils/vars';
 @import './utils/visually-hidden';
-
-//base styles
-@import './base/reset';
-@import './base/base';
-@import './base/container';
-
-//layout styles
-//@import './layout/header';
-//@import './layout/nav';
-//@import './layout/';
-//@import './layout/';
-//@import './layout/';
+@import './utils/reset';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/container';
+@import './utils/mixins';
 
 //components styles
-@import './components/btn';
-//@import './components/media-links';
-//@import './components/logo';
-//@import './components/';
-//@import './components/';
-//@import './components/';
-//@import './components/';
-//@import './components/';
+@import './components/header';
+@import './components/hero';
+@import './components/advantages';
+@import './components/projects';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+// @import './components/';
+// @import './components/';
+// @import './components/';
+

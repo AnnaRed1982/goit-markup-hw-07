@@ -1,4 +1,4 @@
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -9,7 +9,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 :root {
   --white: #ffffff;
   --blueactive: #188ce8;
@@ -153,12 +153,12 @@ body {
 
   transition: background-color var(--anim), box-shadow var(--anim);
 }
-/* .button:hover,
+.button:hover,
 .button:focus {
   font-family: inherit;
   background-color: var(--blueactive);
   box-shadow: 0px 4px 4px var(--shadow);
-} */
+}
 .title {
   color: var(--accentblack);
   font-weight: 700;
