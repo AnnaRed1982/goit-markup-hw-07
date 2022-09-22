@@ -106,7 +106,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
   /* outline: 1px solid blue;
   outline-offset: -1px; */
 }
@@ -115,7 +114,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
   /* outline: 1px solid tomato;
   outline-offset: -1px; */
 }
@@ -127,7 +125,6 @@ body {
   line-height: 1.19;
 
   margin-right: 93px;
-
   /* background-color: greenyellow; */
 }
 .button {
@@ -137,17 +134,14 @@ body {
   min-width: 216px;
   min-height: 50px;
   padding: 10px 32px; /*32-2*2 ширина бордера*/
-
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
   background-color: var(--blue);
   color: var(--white);
 
   cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  letter-spacing: 0.06em;
 
   border-radius: var(--btnradius);
   border: none;
@@ -455,7 +449,6 @@ nav {
 
   transition: border var(--anim), color var(--anim);
 }
-
 .clients__svg {
   display: block;
   fill: currentColor;
@@ -521,34 +514,6 @@ nav {
   margin-bottom: 20px;
 }
 
-/* .footer-social {
-  display: flex;
-  gap: 10px;
-}
-.footer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
-  height: 44px;
-
-  color: var(--white);
-  background-color: var(--iconfootr);
-  border-radius: 50%;
-
-  transition: background-color var(--anim);
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  background-color: var(--blue);
-}
-
-.footer-icon {
-  display: block;
-  fill: currentColor;
-} */
 .footer-link {
   background-color: var(--iconfootr);
   color: var(--white);
