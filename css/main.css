@@ -54,7 +54,7 @@
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -93,7 +93,7 @@ img {
 body {
   background-color: var(--white);
   color: var(--greytext);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.7142857143;
@@ -109,7 +109,7 @@ body {
 
 .logo {
   color: var(--blue);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -132,8 +132,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -142,11 +142,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   color: var(--iconcolor);
@@ -193,16 +193,17 @@ body {
   border: none;
   outline: transparent;
   -webkit-box-shadow: 0px 4px 4px var(--shadow);
-          box-shadow: 0px 4px 4px var(--shadow);
+  box-shadow: 0px 4px 4px var(--shadow);
   position: relative;
   -webkit-transition: background-color var(--anim), -webkit-box-shadow var(--anim);
   transition: background-color var(--anim), -webkit-box-shadow var(--anim);
   transition: background-color var(--anim), box-shadow var(--anim);
   transition: background-color var(--anim), box-shadow var(--anim), -webkit-box-shadow var(--anim);
 }
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   font-family: inherit;
   background-color: var(--blueactive);
   -webkit-box-shadow: 0px 4px 4px var(--shadow);
-          box-shadow: 0px 4px 4px var(--shadow);
-}/*# sourceMappingURL=main.css.map */
+  box-shadow: 0px 4px 4px var(--shadow);
+} /*# sourceMappingURL=main.css.map */
