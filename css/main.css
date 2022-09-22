@@ -526,6 +526,10 @@ nav {
   display: block;
 }
 
+.logo-white {
+  color: var(--white);
+}
+
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
 }

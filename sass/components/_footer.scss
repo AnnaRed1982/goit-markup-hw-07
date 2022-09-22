@@ -11,6 +11,9 @@
 // .adress-item:not(:last-child) {
 //   margin-bottom: 9px;
 // }
+.logo-white {
+  color: var(--white);
+}
 .adress-item {
   &:not(:last-child) {
     margin-bottom: 9px;
