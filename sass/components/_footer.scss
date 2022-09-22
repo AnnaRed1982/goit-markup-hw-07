@@ -8,8 +8,13 @@
   /* background-color: greenyellow; */
   display: block;
 }
-.adress-item:not(:last-child) {
-  margin-bottom: 9px;
+// .adress-item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+.adress-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress-city {
@@ -34,7 +39,7 @@
   display: block;
 
   transition: color var(--anim);
-  
+
   &:hover,
   &:focus {
     color: var(--blueactive);
@@ -87,22 +92,24 @@
   color: var(--greytext-footer);
 
   transition: filter var(--anim), outline var(--anim), border var(--anim);
-}
-.footer-email::placeholder {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  color: var(--greytext-footer);
 
-  position: absolute;
-  top: 15px;
-  left: 16px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: var(--greytext-footer);
+
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 4px var(--shadow));
+    outline: var(--blue);
+    border: 1px solid var(--blue);
+  }
 }
-.footer-email:hover,
-.footer-email:focus {
-  filter: drop-shadow(0px 4px 4px var(--shadow));
-  outline: var(--blue);
-  border: 1px solid var(--blue);
-}
+
 .form-btn {
   position: relative;
 }
